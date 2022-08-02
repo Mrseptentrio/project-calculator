@@ -1,0 +1,60 @@
+:root {
+  --cream: #FCE2DB;
+  --rose: #FF8FB1;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--cream);
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 100px );
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+
+.calculator > button {
+  grid-row: span;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: var(--rose);
+}
+
+
+.calculator > button:hover {
+  background-color: var(--cream);
+  border: 2px solid var(--rose);
+}
+
+
+.doubleButton {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: span 4;
+  background-color: #444;
+  color: #FFF;
+  font-size: 2rem;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+
