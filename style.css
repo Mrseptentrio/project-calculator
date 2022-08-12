@@ -57,4 +57,9 @@ body {
   word-break: break-all;
 }
 
+.output > temporaryOperation {
+  color: #888;
+  font-size: 1.5rem;
+}
+
 
